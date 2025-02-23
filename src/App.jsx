@@ -4,22 +4,25 @@ import ProductList from "./ProductList";
 const products = [
   {
     name: "Cafe Latte",
-    price: "$5000",
+    price: "5000",
+    image: "/cafe.png",
   },
   {
     name: "Croissant",
-    price: "$6000",
+    price: "6000",
+    image: "/croassaint.png",
   },
   {
     name: "Bowl de Frutas",
-    price: "$24.10 / 250gr",
+    price: "24.10 / 250gr",
+    image: "/bowl.png",
   },
 ];
 
 const App = () => {
   return (
     <div style={{ width: '100vw', overflowX: 'hidden' }}>
-      <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '15px', backgroundColor: '#333333', width: '100%', color: 'white' }}>
+      <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '15px', backgroundColor: '#333333', width: '98%', color: 'white' }}>
         <h1 style={{ fontSize: '24px', fontWeight: 'bold' }}>Moccafe</h1>
         <ul style={{ display: 'flex', gap: '20px', listStyle: 'none', padding: 0, margin: 0 }}>
           <li style={{ cursor: 'pointer' }}>Home</li>
@@ -38,7 +41,6 @@ const App = () => {
           <div style={{ flex: '1', textAlign: 'center' }}>
             <h2 style={{ fontSize: '34px', fontWeight: 'bold' }}>The best quality coffee beans<br /> for the best coffee brew</h2>
             <p style={{ color: '#E0C9A6', marginTop: '10px' }}>A cup is enough to give you energy all day long</p>
-            <button style={{ marginTop: '15px', backgroundColor: '#b8a487', padding: '15px 25px', borderRadius: '10px', cursor: 'pointer', border: 'none', color: 'white', fontSize: '16px' }}>Order Now</button>
           </div>
 
           <img src="/taza.png" alt="Coffee Cup" style={{ width: '30%', height: 'auto', borderRadius: '15px', marginRight: '50px' }} />
